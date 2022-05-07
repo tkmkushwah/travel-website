@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,700;1,300;1,400&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------------------------Html element styeling-------------------------- */
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.7;
+}
+ul li{
+    list-style: none;
+}
+li a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.11em;
+}
+/* ===================utility classes======================== */
+.container{
+    max-width: 1200px;
+    width: 60%;
+    margin: 0 auto;
+    
+}
+.lg-heading{
+  font-size: 2.5rem;
+}
+.md-heading{
+    font-size: 1.5rem;
+}
+.text-red{
+    color: #f56565;
+}
+.text-light{
+color: #f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+.background-grey{
+    background-color: grey;
+}
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    border: solid rgb(241, 99, 99) 0.1rem;
+   
+}
+.btn-primary {
+    background-color: rgb(253, 247, 247);
+    border-radius: 2rem;
+  
+}
+.btn:hover{
+    color: red;
+    background-color: azure;
+   }
+.navbar a:hover{
+
+    border-bottom: #e63939 solid 0.1rem;
+}
+
+/* =====================header styling========================= */
+
+.header{
+    height: 95vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('../img/header-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.header-content h1{
+    color:rgb(250, 34, 34);
+    margin-bottom: 0.5em;
+    letter-spacing: 00.11em;
+    font-weight: 500;
+}
+ .navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar{
+   
+    padding: 1rem;
+}
+
+.logo{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    float: left;
+    
+}
+.nav-items{
+    margin-top: 1rem;
+    float: right;
+    
+}
+.nav-item{
+    
+    display: inline-block;
+    padding: 1rem;
+   
+}
+.navbar::after{
+    content: ' ';
+    display:block;
+    clear: both;
+}
+
+.header-content{
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.2)) ;
+}
+.header-content h1 {
+    text-transform: uppercase;
+    font-size: medium;
+   
+}
+
+ p {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size:smaller ;
+}
+/* ========================showcase section styling======================= */
+.showcase{
+    background-color: rgb(189, 175, 175);
+    padding: 10rem 0rem;
+}
+.row{
+    height: 250px;
+    background-color:white;
+    box-shadow: 0px 0px 20px rgb(133, 106, 106);
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .imgbox ,.row1 .textbox{
+    float: left;
+    width: 50%;
+}
+.row2 .imgbox ,.row2 .textbox{
+    float: right;
+    width: 50%;
+}
+.row .imgbox{
+   
+    height: 100%;
+   
+   
+}
+.row .textbox{
+    text-size-adjust: auto;
+    padding: 1rem;
+    
+}
+.row .textbox p{
+    font-weight: 700;
+    font-size: smaller;
+}
+.row .textbox h2{
+    font-weight: 700;
+   letter-spacing: 0.25rem;
+}
+.row .imgbox img{
+    width: 100%;
+    height: 100%;
+}
+/* =========================feature section styling======================= */
+
+.box-wrapper {
+    box-shadow: 0px 0px 20px 0px rgb(138, 132, 132);
+}
+.features{
+    padding: 3rem;
+}
+.features .box-wrapper .box{
+    float: left;
+height: 15rem;
+text-align: center;
+width: 33.33333333%;
+padding: 1em;
+
+}
+.box1{
+    color: white;
+    background-color: rgb(238, 24, 24);
+}
+.box2{
+    color: white;
+    background-color: #333;
+}
+.box3{
+    color: white;
+    background-color: rgb(238, 24, 24);
+    }
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box h2, p{
+    font-weight: 400;
+}
+/* =======================footer styling======================= */
+.footer{
+    height: 10rem;
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
+.padding{
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    padding-left: 0.3em
+}
+/* ==================ab0ut page styling============== */
+.description{
+    border-bottom: solid red 3px;
+    width: 100%;
+}
+.list li{
+    font-size: 1em;
+}
+.aboutus-wrapper{
+  margin-top:2em;
+    /* border: #333 solid 3px; */
+    text-align: center;
+}
+.aboutus-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.aboutus-wrapper li::before {
+    content:"\2713";
+    color: red;
+
+}
+.left{
+    padding-left: 5rem;
+    float: left;
+}
+.right{
+    padding-right: 5rem;
+    float: right;
+ 
+}
+.list p{
+    font-weight: 400;
+    font-size:xx-small;
+}
+.count-item{
+    width: 25%;
+    text-align: center;
+}
+.item-info{
+
+    margin-top: 2em;
+}
+.item-info span{
+    font-size: large;
+    font-weight: 700;
+}
+.item-info::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.item-info .item1{
+    float: left;
+
+}
+.item-info .item2{
+    float: left;
+}
+.item-info .item3{
+    float: left;
+}
+.item-info .item4{
+    float: left;
+}
+.item-info span{
+    color: red;
+}
+.ctn{
+    background-color: red;
+    text-align: center;
+    padding:1em 1em;
+}
+.ctn::after{
+content: '';
+display: block;
+clear: both;
+}
+.ctn-left{
+    float: left;
+}
+.ctn-right{
+    float: right;
+}
+.btn-ctn {
+    font-size: medium;
+    color: white;
+    padding: 0.2em 0.5em;
+    border: #f4f4f4 solid 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.ctn p{
+padding-left: 5em;
+margin-top: .7em;   
+ color: white;
+    font-size: 12px;
+}
+/* ----------------------contact form styling----------- */
+.contact-form{
+    background-color: #f4f4f4;
+    
+    
+}
+.space {
+    height:50rem ;
+    margin:5rem 0;
+}
+.address{
+    background-color: white;
+    float: left;
+    width: 49%;
+    
+    padding: 1rem;
+}
+.form{
+    background-color: white;
+    float: right;
+    width: 49%;
+   
+}
+.contact-form::after{
+    content: ' ';
+    display:block;
+    clear: both;
+}
+.contact-form .address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.contact-form .address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form{
+    padding: 1rem;
+
+}
+ .form h1{
+    border-bottom: 3px red solid;
+}
+.form p{
+    margin-top: 1rem;
+}
+.form label{
+display: block;
+}
+.form input{
+    width: 100%;
+}
+.form textarea{
+    height: 250px;
+    width: 100%;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
